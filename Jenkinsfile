@@ -7,9 +7,9 @@ pipeline {
     agent any
  /*   agent {
         label: 'docker-maven-slave'
-    }
+    } */
     tools {
-        maven 'maven-mixin'
+        maven 'MAVEN_HOME'
     } */
     stages {
         stage('Build & Test') {
