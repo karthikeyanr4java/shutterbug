@@ -10,7 +10,7 @@ pipeline {
     } */
     tools {
         maven 'MAVEN_HOME'
-    } */
+    } 
     stages {
         stage('Build & Test') {
             steps {
