@@ -4,12 +4,13 @@ pipeline {
         registryCredential = 'dockerhub_id'
         dockerImage = ''
     }
-    agent {
+    agent any
+ /*   agent {
         label: 'docker-maven-slave'
     }
     tools {
         maven 'maven-mixin'
-    }
+    } */
     stages {
         stage('Build & Test') {
             step {
