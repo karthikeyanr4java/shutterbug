@@ -14,12 +14,12 @@ pipeline {
     stages {
         stage('Sample') {
             steps {
-                sh 'echo "Hi"'
+                bat 'echo "Hi"'
             }
         }
         stage('Build & Test') {
             steps {
-                sh 'mvn clean install'
+                bat 'mvn clean install'
             }
         }
         stage('Building our image') {
