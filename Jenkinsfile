@@ -7,10 +7,10 @@ pipeline {
     agent any
  /*   agent {
         label: 'docker-maven-slave'
-    }
+    } */
     tools {
-        maven 'MAVEN_HOME'
-    }*/
+        maven 'maven'
+    }
     stages {
         stage('Sample') {
             steps {
