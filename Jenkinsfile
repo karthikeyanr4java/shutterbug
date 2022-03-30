@@ -12,6 +12,11 @@ pipeline {
         maven 'MAVEN_HOME'
     }*/
     stages {
+        stage('Sample') {
+            steps {
+                sh 'echo "Hi"'
+            }
+        }
         stage('Build & Test') {
             steps {
                 sh 'mvn clean install'
